@@ -12,6 +12,7 @@
 
   background-color: #00acdc;
 
+  transition-duration: 300ms;
   color: #fff;
 
   &_buy {
@@ -21,7 +22,6 @@
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
-    transition-duration: 300ms;
   }
 
   &:hover {

@@ -26,7 +26,6 @@
   }
 
   &-nav {
-
     ul {
       display: flex;
       list-style: none;
@@ -60,6 +59,7 @@
 
     &::after {
       @include underline;
+
       transform: scaleX(1);
     }
   }
