@@ -26,42 +26,6 @@
   }
 
   &-nav {
-    a {
-      position: relative;
-      text-decoration: none;
-
-      &[data-qa='nav-active'] {
-        color: $primary-blue;
-
-        &::after {
-          @include underline;
-        }
-      }
-
-      &:visited {
-        color: $main-text-color;
-      }
-
-      &::after {
-        @include underline;
-      }
-
-      &:active::after {
-        @include underline;
-      }
-
-      &:hover {
-        color: $primary-blue;
-      }
-
-      &.another {
-        color: $primary-blue;
-      }
-
-      &:hover::after {
-        transform: scaleX(1);
-      }
-    }
 
     ul {
       display: flex;
@@ -71,5 +35,36 @@
     li {
       margin-right: 20px;
     }
+
+    a {
+      position: relative;
+      text-decoration: none;
+
+      &::after {
+        @include underline;
+      }
+
+      &:hover {
+        color: $primary-blue;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  .is-active {
+    position: relative;
+    color: $primary-blue;
+
+    &::after {
+      @include underline;
+      transform: scaleX(1);
+    }
+  }
+  .is-hover {
+    position: relative;
+    color: $primary-blue;
   }
 }
